@@ -1,0 +1,7 @@
+- hosts: repo_all[0]
+  tasks:
+    - name: Gets snapshot of pip wheels
+      snapshot:
+      register: result
+
+    #- debug: var=result
